@@ -1,0 +1,37 @@
+.pcListp {
+  margin: 0;
+  text-align: left;
+}
+
+.listDetail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pcList {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  border-bottom: solid rgba(0, 0, 0, 0.212) 1px;
+}
+
+.pcList:hover {
+  background-color: rgba(94, 94, 94, 0.11);
+}
+
+.deletep {
+  color: rgba(255, 0, 0, 0.658);
+  font-size: 13px;
+}
+
+.deletep:hover {
+  cursor: pointer;
+  color: rgb(245, 156, 156);
+}
+
+.statuslight {
+  width: 10px;
+  height: 10px;
+  background-size: contain;
+  margin-right: 5px;
+}

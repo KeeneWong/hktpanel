@@ -1,3 +1,8 @@
+
+*{
+  font-family: 'Titillium Web', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +31,19 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.test{
+  border: rgba(16, 16, 110, 0.877) 2px solid;
+}
+
+.test2{
+  border: rgba(110, 16, 16, 0.877) 2px solid;
+}
+
+.sideAnddMain{
+  display: flex;
+
 }
 
 @keyframes App-logo-spin {

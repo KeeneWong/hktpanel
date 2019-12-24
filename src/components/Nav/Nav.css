@@ -1,0 +1,46 @@
+.navbarmain {
+  background: #eef7f8;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hktlogodiv {
+  background-image: url(../../img/hktlogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7vh;
+  width: 150px;
+  margin-left: 3vw;
+}
+
+.settingdiv {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.settinga {
+  color: rgb(88, 88, 88);
+}
+
+.usericon {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.usericonpng {
+  background-image: url("../../img/usericon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.username {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.settinga:hover {
+  cursor: pointer;
+}

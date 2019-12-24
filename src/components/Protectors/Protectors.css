@@ -1,0 +1,44 @@
+.protectorsmain {
+  width: 80vw;
+  margin-left: 170px;
+  /* margin-top: 20px; */
+}
+
+.protectorsDate {
+  display: flex;
+}
+
+.protectorsh3 {
+  border-right: solid 2px rgba(0, 0, 0, 0.63);
+  padding-right: 20px;
+  margin-left: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.countBoxes {
+  width: 80vw;
+  display: flex;
+}
+
+.pcListheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalcountbox {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  height: 40px;
+}
+
+.totalcountbox p {
+  margin: 0;
+}
+
+#totalcount {
+  margin-left: 10px;
+}

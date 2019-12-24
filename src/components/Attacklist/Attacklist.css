@@ -1,0 +1,20 @@
+.attackListp {
+  margin: 0;
+  text-align: left;
+}
+
+.attacklistDetail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.attackList {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  border-bottom: solid rgba(0, 0, 0, 0.212) 1px;
+}
+
+.attackList:hover {
+  background-color: rgba(143, 143, 143, 0.137);
+}

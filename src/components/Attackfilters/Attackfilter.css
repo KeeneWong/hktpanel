@@ -1,0 +1,42 @@
+.filterinput {
+  height: 40px;
+  width: 250px;
+  margin: 40px;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(53, 53, 53, 0.322);
+}
+
+.attackfiltermain {
+  width: 84vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* grid-template-rows: repeat(auto-fill, minmax(200px, 1fr)); */
+  border-top: rgba(0, 0, 0, 0.103) solid;
+  /* border-bottom: rgba(0, 0, 0, 0.103) solid; */
+}
+
+.filterTitle2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 2px;
+  /* height: 40px; */
+  /* background-color: rgba(0, 0, 0, 0.048); */
+  margin: 0;
+}
+
+/* .dropdown {
+  background-color: rgba(236, 236, 236, 0.637);
+} */
+
+.inputfield {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px;
+  background-color: rgba(0, 0, 0, 0.055);
+}

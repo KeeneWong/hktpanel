@@ -1,0 +1,45 @@
+.countboxmain {
+  width: 31%;
+  height: 22vh;
+  margin-left: 20px;
+  display: grid;
+  grid-template-rows: 2fr 4fr 0.3fr;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(53, 53, 53, 0.322);
+}
+
+.countboxmain:hover {
+  cursor: pointer;
+}
+
+.showIndicatorred {
+  background-color: rgba(255, 118, 113, 0.795);
+}
+
+.showIndicatoryellow {
+  background-color: rgba(255, 222, 113, 0.795);
+}
+
+.showIndicatorgreen {
+  background-color: rgba(48, 252, 174, 0.911);
+}
+
+.white {
+  background-color: rgb(255, 255, 255);
+}
+
+.showBar {
+  border-radius: 2px;
+}
+
+.title {
+  margin: 10px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.712);
+}
+
+.countNum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
