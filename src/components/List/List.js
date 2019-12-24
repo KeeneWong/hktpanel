@@ -20,7 +20,7 @@ class List extends Component {
       .map(each => <Pclist pcdata={each}></Pclist>);
 
     let otherpcLists = this.props.protectorData
-      .filter(each => each.status === "attacked")
+      .filter(each => each.attacked === true)
       .map(each => <Pclist pcdata={each}></Pclist>);
 
     this.setState({ result: connectedpcLists.concat(offlinepcLists) });
@@ -29,9 +29,9 @@ class List extends Component {
 
     document.querySelector(".countboxgreen").addEventListener("click", () => {
       if (
-        this.state.result
-          .map(each => each.props.pcdata.status)
-          .includes("attacked")
+        document
+          .querySelector(".showIndicatorred")
+          .classList.contains("white") === false
       ) {
         console.log(offlinepcLists);
         this.setState({ result: connectedpcLists });
@@ -57,13 +57,11 @@ class List extends Component {
 
     document.querySelector(".countboxyellow").addEventListener("click", () => {
       if (
-        this.state.result
-          .map(each => each.props.pcdata.status)
-          .includes("attacked")
+        document
+          .querySelector(".showIndicatorred")
+          .classList.contains("white") === false
       ) {
-        console.log(offlinepcLists);
         this.setState({ result: offlinepcLists });
-        console.log("ok");
         document.querySelector(".showIndicatorred").classList.add("white");
       } else if (
         this.state.result
@@ -83,9 +81,17 @@ class List extends Component {
     });
 
     document.querySelector(".countboxred").addEventListener("click", () => {
-      this.setState({ result: otherpcLists });
-      document.querySelector(".showIndicatorgreen").classList.add("white");
-      document.querySelector(".showIndicatoryellow").classList.add("white");
+      if (
+        document
+          .querySelector(".showIndicatorred")
+          .classList.contains("white") === false
+      ) {
+        console.log("change");
+      } else {
+        this.setState({ result: otherpcLists });
+        document.querySelector(".showIndicatorgreen").classList.add("white");
+        document.querySelector(".showIndicatoryellow").classList.add("white");
+      }
     });
   }
 
@@ -103,7 +109,7 @@ class List extends Component {
           <p className="filterTitle">LICENSE</p>
           <p className="filterTitle"></p>
         </div>
-        {this.state.result}
+        <div className="scrolllist">{this.state.result}</div>
       </div>
     );
   }

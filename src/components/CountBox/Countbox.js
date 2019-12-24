@@ -34,13 +34,7 @@ class Countbox extends Component {
           <h2 className="title">{this.props.title}</h2>
         </div>
         <div className="countNum">
-          <h1>
-            {
-              this.props.protectorData.filter(
-                each => each.status === this.props.status.toLowerCase()
-              ).length
-            }
-          </h1>
+          <h1>{this.props.numberofpc}</h1>
         </div>
         <div className={`showIndicator${this.props.selectcolor} white`}></div>
       </div>

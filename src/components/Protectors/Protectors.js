@@ -21,6 +21,15 @@ class Protectors extends Component {
       date: date
     };
   }
+
+  alertdelete = () => {
+    // document.querySelector(".deletep").addEventListener("click", () => {
+    if (window.confirm("Are you sure you want to delete these PC?")) {
+    } else {
+    }
+    // });
+  };
+
   render() {
     return (
       <div className="protectorsmain">
@@ -35,6 +44,10 @@ class Protectors extends Component {
             title="ATTACKED (LAST 180 DAYS)"
             status="ATTACKED"
             selectcolor="red"
+            numberofpc={
+              this.props.protectorData.filter(each => each.attacked === true)
+                .length
+            }
             protectorData={this.props.protectorData}
           ></Countbox>
           <Countbox
@@ -43,6 +56,10 @@ class Protectors extends Component {
             status="OFFLINE"
             selectcolor="yellow"
             protectorData={this.props.protectorData}
+            numberofpc={
+              this.props.protectorData.filter(each => each.status === "offline")
+                .length
+            }
           ></Countbox>
           <Countbox
             color="rgba(72, 241, 177, 0.911"
@@ -50,6 +67,11 @@ class Protectors extends Component {
             status="CONNECTED"
             selectcolor="green"
             protectorData={this.props.protectorData}
+            numberofpc={
+              this.props.protectorData.filter(
+                each => each.status === "connected"
+              ).length
+            }
           ></Countbox>
         </div>
 
@@ -62,6 +84,11 @@ class Protectors extends Component {
         </div>
 
         <List protectorData={this.props.protectorData}></List>
+
+        <div className="deletebar">
+          <p>CANCEL</p>
+          <button onClick={this.alertdelete}>REMOVE</button>
+        </div>
       </div>
     );
   }

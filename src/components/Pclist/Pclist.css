@@ -11,8 +11,9 @@
 
 .pcList {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 0.5fr 0.2fr;
   border-bottom: solid rgba(0, 0, 0, 0.212) 1px;
+  height: 50px;
 }
 
 .pcList:hover {

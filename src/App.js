@@ -19,8 +19,10 @@ let protectorData = [
     show: true,
     lastonline: "20 Dec 19 3:24 PM",
     light:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Button_Icon_Green.svg/1024px-Button_Icon_Green.svg.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Button_Icon_Green.svg/1024px-Button_Icon_Green.svg.png",
+    attacked: true
   },
+
   {
     user: "ESI-PC",
     machine: "ENGEL",
@@ -75,7 +77,55 @@ let protectorData = [
     version: "3.5.1",
     os: "window7",
     licensetype: "client",
-    status: "attacked",
+    status: "connected",
+    show: true,
+    lastonline: "20 Dec 19 3:24 PM",
+    light:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Button_Icon_Green.svg/1024px-Button_Icon_Green.svg.png"
+  },
+  {
+    user: "TestUser2",
+    machine: "ESI-laptop",
+    version: "3.5.1",
+    os: "window7",
+    licensetype: "client",
+    status: "offline",
+    show: true,
+    lastonline: "20 Dec 19 3:24 PM",
+    light:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Button_Icon_Yellow.svg/1024px-Button_Icon_Yellow.svg.png"
+  },
+  {
+    user: "TestUser2",
+    machine: "ESI-laptop",
+    version: "3.5.1",
+    os: "window7",
+    licensetype: "client",
+    status: "offline",
+    show: true,
+    lastonline: "20 Dec 19 3:24 PM",
+    light:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Button_Icon_Yellow.svg/1024px-Button_Icon_Yellow.svg.png"
+  },
+  {
+    user: "TestUser2",
+    machine: "ESI-laptop",
+    version: "3.5.1",
+    os: "window7",
+    licensetype: "client",
+    status: "offline",
+    show: true,
+    lastonline: "20 Dec 19 3:24 PM",
+    light:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Button_Icon_Yellow.svg/1024px-Button_Icon_Yellow.svg.png"
+  },
+  {
+    user: "TestUser2",
+    machine: "ESI-laptop",
+    version: "3.5.1",
+    os: "window7",
+    licensetype: "client",
+    status: "offline",
     show: true,
     lastonline: "20 Dec 19 3:24 PM",
     light:

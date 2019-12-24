@@ -7,14 +7,6 @@ class Pclist extends Component {
     this.state = {};
   }
 
-  alertdelete = () => {
-    // document.querySelector(".deletep").addEventListener("click", () => {
-    if (window.confirm("Are you sure you want to delete this PC?")) {
-    } else {
-    }
-    // });
-  };
-
   render() {
     return (
       <div className="pcList">
@@ -49,9 +41,15 @@ class Pclist extends Component {
         </div>
 
         <div className="listDetail">
-          <p className="pcListp deletep" onClick={this.alertdelete}>
+          {/* <p className="pcListp deletep" onClick={this.alertdelete}>
             DELETE
-          </p>
+          </p> */}
+          <input
+            className="pcListp deletep"
+            type="checkbox"
+            id="c1"
+            name="cc"
+          />
         </div>
       </div>
     );
